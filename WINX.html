@@ -1,0 +1,99 @@
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Miracle Community</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<link href="./css/bootstrap.css" rel="stylesheet">
+<!-- <a type="text" id="resultrq" data-index="1" name="" /> -->
+<!-- <a type="text" id="versionC" data-index="1" name="" /> -->
+<script src="./js/bootstrap.min.js"></script>
+   <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+	   
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <!-- <link href="./css/bootstrap-grid.css" rel="stylesheet"> -->
+	<link href="jumbotron.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="#">Miracle Community</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="./index.html">Домой <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./Warface.html">Warface EDITING</a>
+      </li> 
+	  <li class="nav-item">
+        <a class="nav-link" href="./additionally.html">Дополнительно</a>
+      </li>
+    </ul>
+
+  </div>
+</nav>
+<div class="jumbotron text-center">
+    <div class="container">
+      <h1 class="display-3">Miracle Community</h1>
+      <p class="lead text-muted" id = "resultrqRu"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></p>
+      <p class="lead text-muted" id = "resultrqEn"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></p>
+ <p>
+        <a href="https://mega.nz/folder/xXw1kSCJ#lxy4r9Kl9MiP9Pm4BHuFIg" id="buttonubpdate" class="btn btn-primary my-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">UPDATE WINX</font></font></a>
+        <a href="https://www.youtube.com/channel/UCIdCIeWgUBFRVD61RHrYD5w/" class="btn btn-secondary my-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Перейти на канал</font></font></a>
+		<a href="https://docs.google.com/forms/d/e/1FAIpQLSfHfS2a1ACvlk_D-8U5Ki8cV4EPJxzLbnmNkT5gr1V9DidXPQ/viewform" class="btn btn-secondary my-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Поделиться эдитом</font></font></a>
+      </p>
+  </div>
+  </div>
+    <div class="text-center" id="noupdate">
+</div>
+  <div class="text-center" id="updateq">
+</div>
+  </body>
+     <script>
+var versionC = "1.55"
+var ulr = "https://mega.nz/folder/xXw1kSCJ#lxy4r9Kl9MiP9Pm4BHuFIg"
+var params = window.location.search.replace('?','');
+if (params != "") {
+<!-- console.log(params); -->
+if (params != versionC) {
+<!-- window.open(ulr, '_blank'); -->
+document.getElementById('resultrqRu').innerHTML  = "У тебя старая версия клиента, требуется обновление!";
+document.getElementById('resultrqEn').innerHTML  = "You have an old version of the client, an update is required!";
+document.getElementById('updateq').innerHTML='<h1 class="display-4">Only Update</h1>     <div class="album py-5">     <div class="container">       <div class="row">    <div class="col-md-4"> 		<div class="card mb-4 shadow-sm"> 			<img class="bd-placeholder-img card-img-top" width="100%" height="100%" src="Step1.gif"></img> 			            <div class="card-body">               <p class="text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Step1: Download</font><font style="vertical-align: inherit;"></font></font></p>             </div> 	    </div>		    </div>      <div class="col-md-4">		 		<div class="card mb-4 shadow-sm"> 			<img class="bd-placeholder-img card-img-top" width="100%" height="100%" src="Step2.gif"></img> 						            <div class="card-body">               <p class="text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Step2: Replace</font><font style="vertical-align: inherit;"></font></font></p>             </div> 	    </div>    </div>      <div class="col-md-4">		 		<div class="card mb-4 shadow-sm"> 			<img class="bd-placeholder-img card-img-top" width="100%" height="100%" src="Step3.gif"></img> 						            <div class="card-body">               <p class="text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Step3: Start</font><font style="vertical-align: inherit;"></font></font></p>             </div> 	    </div>    </div>    </div> </div> 	</div>'
+}
+if (params == versionC) {
+<!-- window.open(ulr, '_blank'); -->
+document.getElementById('resultrqRu').innerHTML  = "У тебя самая новая версия клиента, обновление не требуется :)";
+document.getElementById('buttonubpdate').className   = "btn btn-secondary my-2";
+document.getElementById('resultrqEn').innerHTML  = "You have the newest version of the client, no update required :)";
+document.getElementById('updateq').innerHTML  =     '<div class="container">       <div class="row">    <div class="col-md-4"> 		<div class="card mb-4 shadow-sm"> 			<img class="bd-placeholder-img card-img-top" width="100%" height="100%" src="sussy_baka.gif"></img> 	    </div>		    </div>      <div class="col-md-4">		 		<div class="card mb-4 shadow-sm"> 			<img class="bd-placeholder-img card-img-top" width="100%" height="100%" src="sussy_baka.gif"></img> 	    </div>    </div>      <div class="col-md-4">		 		<div class="card mb-4 shadow-sm"> 			<img class="bd-placeholder-img card-img-top" width="100%" height="100%" src="sussy_baka.gif"></img> 	    </div>    </div>    </div> </div> 	</div>';
+}
+} else {
+document.getElementById('noupdate').innerHTML = ' <h1 class="display-4">Install</h1>     <div class="album py-5">     <div class="container">       <div class="row">    <div class="col-md-4"> 		<div class="card mb-4 shadow-sm"> 			<img class="bd-placeholder-img card-img-top" width="100%" height="100%" src="InstallStep1.gif"></img> 			            <div class="card-body">               <p class="text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Step1: Unpack</font><font style="vertical-align: inherit;"></font></font></p>             </div> 	    </div>		    </div>      <div class="col-md-4">		 		<div class="card mb-4 shadow-sm"> 			<img class="bd-placeholder-img card-img-top" width="100%" height="100%" src="InstallStep2.gif"></img> 						            <div class="card-body">               <p class="text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Step2: Set Warface Path and WINX path</font><font style="vertical-align: inherit;"></font></font></p>             </div> 	    </div>    </div>      <div class="col-md-4">		 		<div class="card mb-4 shadow-sm"> 			<img class="bd-placeholder-img card-img-top" width="100%" height="100%" src="Step3.gif"></img> 						            <div class="card-body">               <p class="text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Step3: Start</font><font style="vertical-align: inherit;"></font></font></p>             </div> 	    </div>    </div>    </div> </div> 	</div>'
+document.getElementById('buttonubpdate').className   = "btn btn-primary my-2";
+document.getElementById('buttonubpdate').innerHTML   = "Download WINX";
+}
+<!-- document.getElementById('versionC').innerHTML  = versionC; -->
+</script> 
+</html>
